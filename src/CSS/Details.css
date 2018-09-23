@@ -1,0 +1,31 @@
+.detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30%;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  width: 33%;
+  height: 20%;
+  box-shadow: 0px 0px 9px 5px #050422;
+  background-color: #fff;
+}
+
+p{
+  margin: 5px 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+span{
+  font-size: bold;
+  color: #fb621f;
+}
+
+@media screen and (max-width: 750px) {
+  .detail{
+    width: 90%;
+    height: 40%;
+    margin-left: 20px;
+  }
+}

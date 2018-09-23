@@ -24,9 +24,8 @@ class StoreList extends Component {
 
     return (
       <div className="storelist">
-        <h1>SINGLESPOT</h1>
         <h3>Nom:</h3>
-        <div>{this.state.data.map((store, i) => {return <ul key={i}><Link to={{
+        <div>{this.state.data.map((store, i) => {return <ul className="liste" key={i}><Link to={{
           pathname:`/details/${i}`,
           state:{data:store}
         }}><li>{store.Nom}</li></Link></ul>})}</div>

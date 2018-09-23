@@ -3,19 +3,21 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './index.css';
 import App from './App';
-import StoreList from './components/StoreList'
 import Details from './components/Details'
+import Header from './components/Header'
 
 const Root = () => {
 
   return(
     <Router>
+      <div>
+        <Header/>
         <Switch>
             <Route path='/' component={App} exact />
-            <Route path='/StoreList/:id' component={StoreList} />
             <Route path='/details/:i' component={Details} />
         </Switch>
-  </Router>
+      </div>
+    </Router>
   )
 }
 
