@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import '../CSS/Header.css'
 
+// j'ai mis un bouton pour rediriger vers la page d'accueil
 
 const Header = (props) => {
   return(

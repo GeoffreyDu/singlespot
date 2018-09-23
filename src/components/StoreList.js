@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import '../CSS/StoreList.css';
 import { Link } from "react-router-dom"
-
+//j'ai fait un fetch de l'api fournie
+//Avec un map j'ai recupéré les noms des boucheries et j'ai utilisé un link pour rediriger au clic vers la page où sont les informations
+// j'ai utilisé la key i du map pour faire un id et avoir les infos de la boucherie selectionnée
 
 class StoreList extends Component {
   state={

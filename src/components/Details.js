@@ -1,5 +1,7 @@
 import React from "react"
 import '../CSS/Details.css'
+// ici se trouve les informations liées aux boucheries
+// avec la const j'ai récupéré le state du composant StoreList
 
 const Details = (props) => {
   console.log(props.location.state.data);
