@@ -28,7 +28,7 @@ class StoreList extends Component {
         <h3>Nom:</h3>
         <div>{this.state.data.map((store, i) => {return <ul key={i}><Link to={{
           pathname:`/details/${i}`,
-          state:{detail:store.data}
+          state:{data:store}
         }}><li>{store.Nom}</li></Link></ul>})}</div>
       </div>
     );
